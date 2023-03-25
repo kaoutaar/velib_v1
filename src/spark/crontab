@@ -1,0 +1,2 @@
+
+0 */5 * * * root python /code/batch_consumer.py >> /var/log/cron.log
