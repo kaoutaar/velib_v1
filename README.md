@@ -1,4 +1,4 @@
-# end to end data pipeline/ batch + stream/ dashboard
+# velib_v1
 
 ## The data pipeline
 
@@ -23,13 +23,13 @@ To try this pipeline in your machine all you have to do is to
 3) if you're on windows try starting docker desktop,
 4) in terminal, build the following images using their dockerfiles.
 
-# pyspark
+### pyspark
 docker build -t pyspark src/spark
 
-# mssqlapp
+### mssqlapp
 docker build -t mssqlapp src/mssql
 
-# pyapp
+### pyapp
 docker build -t pyapp src/app
 
 
