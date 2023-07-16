@@ -17,8 +17,11 @@ The app shows that the station Jardin Aux Fleurs in Brussels has 5 bikes availab
 to deploy the whole architecture, i've used docker images, one for each service, and docker-compose to make all the containers run in the same network and contact each others
 
 ## On your machine
-to try this pipeline in your machine all you have to do is to clone this repository
-build the following images using their dockerfiles. But before that, cd to the project folder using the command-line, and if you're on windows try starting docker desktop first.
+To try this pipeline in your machine all you have to do is to
+1) clone this repository
+2) cd to the project folder using you terminal
+3) if you're on windows try starting docker desktop,
+4) in terminal, build the following images using their dockerfiles.
 
 # pyspark
 docker build -t pyspark src/spark
@@ -30,7 +33,7 @@ docker build -t mssqlapp src/mssql
 docker build -t pyapp src/app
 
 
-and finally run the docker-compose command to build the whole architecture.
+And finally run the docker-compose command to build the whole architecture.
 
 docker-compose -f dockercompose.yaml up
 
